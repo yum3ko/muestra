@@ -1,0 +1,21 @@
+color_base = #789abc
+color_non = lighten(color_base, 30%)
+color_par = lighten(color_base, 65%)
+
+table
+	width 80%
+	max-width 80%
+	background-color color_non
+	margin-bottom 2rem
+tr
+	&:nth-child(2n)
+		background color_par
+th, td 
+	text-align left
+	border-width 1px
+	border-spacing 2px
+	border-width 1px solid #ddd
+	padding .5rem
+	border-top1px solid #ddd
+th
+	width 9rem

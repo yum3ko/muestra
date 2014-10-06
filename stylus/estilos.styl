@@ -1,0 +1,95 @@
+@import "normalize.styl"
+c_cabecera = #002546
+c_titulo = #FF9966
+c_menu = #ddd 
+c_botonNormal = rgb(153, 217, 234)
+c_botonHover = rgb(255, 255, 128)
+alto_header = 8rem
+
+body
+	font-size 16px
+    font-family helvetica
+    color c_cabecera
+header
+	background-color c_cabecera
+	height alto_header
+	a
+		line-height alto_header
+		font-family helvetica
+		text-decoration none
+		color #fff
+		font-size 3em
+		float left
+footer
+	clear both
+	font-size .8rem
+	text-align center
+	background c_menu
+	padding 1rem 4rem 1em 4rem
+article
+	float right
+	width 80%
+	p
+		width 90%
+a
+	color c_cabecera
+	text-decoration none
+h1
+	color c_titulo
+ul
+	list-style-type none
+	text-decoration none
+	padding 0
+	margin 0
+figure
+	margin 0
+	margin-bottom 1rem
+#logo
+	float right
+	margin-bottom 0
+#menu
+	width 100%
+	clear both
+	z-index 100
+	background c_menu
+	text-align right
+	a
+		text-align center
+		padding-top .5rem
+		font-size 1.2rem
+		&:hover
+			color c_menu
+		li
+			display inline-block
+			width 7rem
+			height 2rem
+			&:hover
+				background-color c_cabecera
+#top
+	float left
+	width 19%
+	p
+		font-size 1.5em
+		text-align center
+	a
+		font-size 1.2rem
+		li
+			width 9rem
+			margin-top .5rem
+			padding .5rem
+			background c_botonNormal
+			border-top-right-radius 1rem
+			border-bottom-right-radius 1rem
+			&:hover
+				background c_botonHover
+				width 9rem
+				padding-left 1.2rem
+.videogames
+	padding .1rem
+	text-align center
+.game
+	width 8em
+	display inline-block
+	img
+		width 128px
+		height 128px
